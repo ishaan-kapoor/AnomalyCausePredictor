@@ -1,0 +1,68 @@
+
+Write rejected
+Query uuid : e2ceacb2-c8c9-4796-b186-6f1c4ae8f7e4	Time taken by Query in millis: 120138
+Query uuid : 9bd58af9-a4d7-4823-914b-93c6e8a116a0	Time taken by Query in millis: 120247
+Query uuid : df68c9e6-4517-4e36-87f0-7e71fc7c5c21	Time taken by Query in millis: 280339
+Query uuid : 49e55f02-06b4-42fd-92d6-1ab9c55ca19c	Time taken by Query in millis: 120130
+
+Disk Usage Alert
+
+Refresh Time Peaked at:
+Peak at: 2024-06-25T18:07:53Z	At Node: es-data-paid1-es7-23-1b	Value: 102293
+
+Queries with refreshInline=true
+Query uuid : d8b5d101-be5d-4192-831e-94733fca94d5	Time ttm: 120100
+Query uuid : b7dedde4-7316-47fc-8eb2-325bad9daa27	Time ttm: 120095
+Query uuid : 8548015e-0391-490a-8dcd-574ab233f769	Time ttm: 120093
+Query uuid : b9657e0e-15cc-4a3e-9a6d-c4c741421466	Time ttm: 120494
+Query uuid : 13fb9da9-ff8d-4383-b6d7-824850ff2b29	Time ttm: 120098
+Query uuid : 53e9066b-1df3-4d19-b46d-9b03551da849	Time ttm: 120093
+Query uuid : 3d4d87d5-ae32-440f-8f42-418249e22602	Time ttm: 120099
+Query uuid : 306dcea1-d62e-454a-9b89-b539e45207b1	Time ttm: 120099
+Query uuid : 171af61e-8205-4608-9783-1121fc43b96f	Time ttm: 120020
+Query uuid : ed3586a0-6544-49f7-9527-3f0c1f3cd445	Time ttm: 120080
+Query uuid : 0f97ed0f-0a90-4647-adfc-cd5ef5f8929c	Time ttm: 120093
+Query uuid : 14800378-d9bf-46f9-b1ab-c649bd4e06a3	Time ttm: 120101
+Query uuid : e0d392a7-2c51-421d-8c29-6801af00ab7a	Time ttm: 120099
+Query uuid : 72cdd06f-6b8b-4b69-8ae9-3514b11c8872	Time ttm: 120061
+Query uuid : a1b086c2-b243-4919-b993-c602d567326f	Time ttm: 120099
+Query uuid : 0f3db3dc-1312-47d0-b214-118fe40a664c	Time ttm: 120091
+Query uuid : 4d4415a2-2fc3-4ab4-9f7a-8541f0a0866c	Time ttm: 120092
+Query uuid : a2834f68-d544-44cf-844e-9b02408fd809	Time ttm: 120074
+Query uuid : 06b424a6-04d2-4b9e-bcb4-62068b51df04	Time ttm: 120099
+
+Shard Relocating
+
+Write rejected
+Query uuid : e2ceacb2-c8c9-4796-b186-6f1c4ae8f7e4	Time taken by Query in millis: 120138
+Query uuid : 9bd58af9-a4d7-4823-914b-93c6e8a116a0	Time taken by Query in millis: 120247
+Query uuid : df68c9e6-4517-4e36-87f0-7e71fc7c5c21	Time taken by Query in millis: 280339
+Query uuid : 49e55f02-06b4-42fd-92d6-1ab9c55ca19c	Time taken by Query in millis: 120130
+
+Disk Usage Alert
+
+Refresh Time Peaked at:
+Peak at: 2024-06-25T18:07:53Z	At Node: es-data-paid1-es7-23-1b	Value: 102293
+
+Queries with refreshInline=true
+Query uuid : d8b5d101-be5d-4192-831e-94733fca94d5	Time ttm: 120100
+Query uuid : b7dedde4-7316-47fc-8eb2-325bad9daa27	Time ttm: 120095
+Query uuid : 8548015e-0391-490a-8dcd-574ab233f769	Time ttm: 120093
+Query uuid : b9657e0e-15cc-4a3e-9a6d-c4c741421466	Time ttm: 120494
+Query uuid : 13fb9da9-ff8d-4383-b6d7-824850ff2b29	Time ttm: 120098
+Query uuid : 53e9066b-1df3-4d19-b46d-9b03551da849	Time ttm: 120093
+Query uuid : 3d4d87d5-ae32-440f-8f42-418249e22602	Time ttm: 120099
+Query uuid : 306dcea1-d62e-454a-9b89-b539e45207b1	Time ttm: 120099
+Query uuid : 171af61e-8205-4608-9783-1121fc43b96f	Time ttm: 120020
+Query uuid : ed3586a0-6544-49f7-9527-3f0c1f3cd445	Time ttm: 120080
+Query uuid : 0f97ed0f-0a90-4647-adfc-cd5ef5f8929c	Time ttm: 120093
+Query uuid : 14800378-d9bf-46f9-b1ab-c649bd4e06a3	Time ttm: 120101
+Query uuid : e0d392a7-2c51-421d-8c29-6801af00ab7a	Time ttm: 120099
+Query uuid : 72cdd06f-6b8b-4b69-8ae9-3514b11c8872	Time ttm: 120061
+Query uuid : a1b086c2-b243-4919-b993-c602d567326f	Time ttm: 120099
+Query uuid : 0f3db3dc-1312-47d0-b214-118fe40a664c	Time ttm: 120091
+Query uuid : 4d4415a2-2fc3-4ab4-9f7a-8541f0a0866c	Time ttm: 120092
+Query uuid : a2834f68-d544-44cf-844e-9b02408fd809	Time ttm: 120074
+Query uuid : 06b424a6-04d2-4b9e-bcb4-62068b51df04	Time ttm: 120099
+
+Shard Relocating

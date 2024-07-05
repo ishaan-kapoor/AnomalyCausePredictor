@@ -1,0 +1,10 @@
+{
+  "_source" : {
+    "calleeMethod" : "doSafeLog",
+    "requestContext" : {
+      "path" : "com.spr.events.event.outbound.PostUpdatedEvent",
+      "distributedTraceId" : "6672dfad296ce30a6d3be968"
+    },
+    "timestamp" : 1718804517355
+  }
+}

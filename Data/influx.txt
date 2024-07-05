@@ -1,0 +1,17 @@
+token : VAvHDVaja4941jg4NJKEncgQGXELrjwkicpNSBcl5Uc_1AX--oU-cp546RRyrvW3sXDgyBNhuyiyBXiaDW52bg==
+bucket : refined
+org  : sprinklr
+
+start time of data in db: 2024-05-19T06:23:51Z
+end time : +30d
+
+influx write -b example-bucket -f path/to/example.csv
+
+......KIBANA........
+
+attributes.esReqRecTimestamp (not present in all)
+requestContext.additional.JOB_TRIGGER_START_TIME (not in all)
+date and timestamp (was slightly higher 15sec than job_trigger_start was same for another) present in all
+
+
+test case.........

@@ -1,0 +1,7 @@
+.gradle
+.project
+.settings
+elasticsearch*
+kibana*
+app/build
+*/.DS_Store

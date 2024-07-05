@@ -1,0 +1,466 @@
+{
+  "took" : 226,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 3644,
+    "successful" : 3644,
+    "skipped" : 3638,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : {
+      "value" : 741,
+      "relation" : "eq"
+    },
+    "max_score" : 9.583778,
+    "hits" : [
+      {
+        "_index" : "monitoring_longlived_20240619_1200",
+        "_type" : "monitoringLog",
+        "_id" : "rbW7MJABRdHMLkBcniJ3",
+        "_score" : 9.583778,
+        "_source" : {
+          "date" : "2024-06-19 19:11:59.758 +0530",
+          "ctxUId" : -100,
+          "moduleType" : "paid",
+          "level" : "ERROR",
+          "uuid" : "a8160206-3bed-47ec-a433-84bbf269457c",
+          "ctxPId" : 124,
+          "calleeClass" : "com.spr.search.repository.elasticsearch.es.AbstractESRequestBuilder",
+          "threadName" : "APP_Thread_124_8805_-100__1718804519758_P_Th_SPR-monitoring-logger-pool-7-thread-12",
+          "sprAppInfo" : {
+            "sprAppType" : "MSG_PROCESSOR",
+            "extraAppInfo" : { },
+            "metaInfo" : { },
+            "processID" : "1",
+            "appStartTime" : 1718522297913,
+            "webRequest" : false,
+            "ui" : false
+          },
+          "querySkeletonHash" : "7865D5",
+          "calleeMethod" : "doSafeLog",
+          "requestContext" : {
+            "path" : "com.spr.events.event.outbound.PostUpdatedEvent",
+            "distributedTraceId" : "6672dfafc7d23554c77cb3d8",
+            "module" : "MP",
+            "additional" : { },
+            "source" : "com.spr.events.event.outbound.PostUpdatedEvent",
+            "traceEnabled" : false,
+            "debugLogEnabled" : false,
+            "skipAutoTranslate" : false
+          },
+          "hostNameIp" : "message-processor-event-queue-deployment-75569dd8cc-fk28d/10.0.202.147",
+          "deploymentName" : "message-processor-event-queue-deployment",
+          "attributes" : {
+            "__exception_class" : "com.spr.exceptions.unchecked.SprinklrRuntimeException",
+            "indicesCount" : 1,
+            "__exception_atPackage" : "com.spr.utils.elasticsearch",
+            "__exception_rootCause_class" : "java.io.IOException",
+            "__exception_atClassMethodRC" : "org.elasticsearch.client.rest.support.InternalRestClient$1.retryIfPossible(InternalRestClient.java:342)",
+            "_doc_type" : "longlived",
+            "callee_m" : "call",
+            "clusterName" : "paid1-es7",
+            "__exception_exceptionChain" : "com.spr.exceptions.unchecked.SprinklrRuntimeException: Failed execution timeValue: 15m, org.elasticsearch.common.util.concurrent.UncategorizedExecutionException: Failed execution, java.util.concurrent.ExecutionException: java.io.IOException: request retries exceeded max retry timeout [120000], java.io.IOException: request retries exceeded max retry timeout [120000]",
+            "__exception_msg" : "Failed execution timeValue: 15m",
+            "callee_c" : "com.spr.ops.ContextTransferableCallable",
+            "esServerType" : "AD_ENTITY",
+            "querySize" : 280,
+            "__exception_stackTrace" : """com.spr.exceptions.unchecked.SprinklrRuntimeException: Failed execution timeValue: 15m
+	at com.spr.utils.elasticsearch.ElasticSearchUtil.executeActionGet(ElasticSearchUtil.java:564)
+	at com.spr.search.repository.elasticsearch.es.AbstractESRequestBuilder.doExecuteActionGet(AbstractESRequestBuilder.java:174)
+	at com.spr.search.repository.elasticsearch.es.ESSearchRequestBuilder.doExecuteActionGet(ESSearchRequestBuilder.java:258)
+	at com.spr.search.repository.elasticsearch.es.ESSearchRequestBuilder.doExecuteActionGet(ESSearchRequestBuilder.java:62)
+	at com.spr.search.repository.elasticsearch.es.AbstractESRequestBuilder.lambda$executeActionGet$0(AbstractESRequestBuilder.java:102)
+	at com.spr.utils.core.interceptor.TracingInterceptor.run(TracingInterceptor.java:20)
+	at com.spr.utils.core.interceptor.Interceptors.lambda$run$1(Interceptors.java:56)
+	at com.spr.utils.core.RequestContextProvider.safeTrackCall(RequestContextProvider.java:323)
+	at com.spr.utils.core.interceptor.TrackingInterceptor.run(TrackingInterceptor.java:15)
+	at com.spr.utils.core.interceptor.Interceptors.lambda$run$1(Interceptors.java:56)
+	at com.spr.utils.core.interceptor.StuckThreadInterceptor.run(StuckThreadInterceptor.java:77)
+	at com.spr.utils.core.interceptor.Interceptors.lambda$run$1(Interceptors.java:56)
+	at com.spr.utils.core.interceptor.BulkheadInterceptor.run(BulkheadInterceptor.java:31)
+	at com.spr.utils.core.interceptor.Interceptors.lambda$run$1(Interceptors.java:56)
+	at com.spr.utils.core.interceptor.RateLimiterInterceptor.run(RateLimiterInterceptor.java:53)
+	at com.spr.utils.core.interceptor.Interceptors.lambda$run$1(Interceptors.java:56)
+	at com.spr.utils.core.interceptor.CircuitBreakerInterceptor.run(CircuitBreakerInterceptor.java:29)
+	at com.spr.utils.core.interceptor.Interceptors.lambda$run$1(Interceptors.java:56)
+	at com.spr.utils.core.interceptor.Interceptors.run(Interceptors.java:53)
+	at com.spr.utils.core.interceptor.Interceptors.run(Interceptors.java:56)
+	at com.spr.utils.core.interceptor.Interceptors.run(Interceptors.java:56)
+	at com.spr.utils.core.interceptor.Interceptors.run(Interceptors.java:56)
+	at com.spr.utils.core.interceptor.Interceptors.run(Interceptors.java:56)
+	at com.spr.utils.core.interceptor.Interceptors.run(Interceptors.java:56)
+	at com.spr.utils.core.interceptor.Interceptors.run(Interceptors.java:56)
+	at com.spr.utils.core.interceptor.Interceptors.run(Interceptors.java:45)
+	at com.spr.search.repository.elasticsearch.es.AbstractESRequestBuilder.executeActionGet(AbstractESRequestBuilder.java:100)
+	at com.spr.search.repository.elasticsearch.ESSearchRepositoryImpl.search(ESSearchRepositoryImpl.java:324)
+	at com.spr.search.repository.elasticsearch.ESSearchRepositoryDelegator.search(ESSearchRepositoryDelegator.java:169)
+	at com.spr.paid.repositories.AbstractRepository.doRepoSearch(AbstractRepository.java:897)
+	at com.spr.paid.repositories.AbstractRepository.findWithESResponse(AbstractRepository.java:705)
+	at com.spr.paid.repositories.AbstractRepository.find(AbstractRepository.java:353)
+	at com.spr.services.schedule.AdVariantPublishScheduleServiceImpl.getAdsUsingPost(AdVariantPublishScheduleServiceImpl.java:589)
+	at com.spr.services.schedule.AdVariantPublishScheduleServiceImpl.updateSchedulingAction(AdVariantPublishScheduleServiceImpl.java:171)
+	at com.spr.messageprocessor.listeners.outbound.PostUpdatedEventListener.process(PostUpdatedEventListener.java:111)
+	at com.spr.messageprocessor.listeners.outbound.PostUpdatedEventListener.process(PostUpdatedEventListener.java:67)
+	at com.spr.messageprocessor.listeners.outbound.AbstractPostEventListener.processEvent(AbstractPostEventListener.java:129)
+	at com.spr.messageprocessor.listeners.outbound.AbstractPostEventListener.processEvent(AbstractPostEventListener.java:78)
+	at com.spr.messageprocessor.listeners.eventQueue.EventQueueListener.processMessage(EventQueueListener.java:53)
+	at com.spr.messageprocessor.framework.AbstractObjectMessageListener.processMessage(AbstractObjectMessageListener.java:54)
+	at com.spr.messageprocessor.framework.AbstractObjectMessageListener.processEvent(AbstractObjectMessageListener.java:84)
+	at com.spr.messageprocessor.framework.AbstractObjectMessageListener.onKafkaEvent(AbstractObjectMessageListener.java:49)
+	at com.spr.messageprocessor.framework.executor.TopicWorker$Task.run(TopicWorker.java:575)
+	at io.github.resilience4j.bulkhead.Bulkhead.lambda$decorateRunnable$10(Bulkhead.java:299)
+	at io.github.resilience4j.bulkhead.Bulkhead.executeRunnable(Bulkhead.java:534)
+	at com.spr.resilence.bulkhead.SemaphoreBulkhead.execute(SemaphoreBulkhead.java:83)
+	at com.spr.messageprocessor.framework.executor.TopicWorker$2.run(TopicWorker.java:368)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: org.elasticsearch.common.util.concurrent.UncategorizedExecutionException: Failed execution
+	at org.elasticsearch.action.support.AdapterActionFuture.rethrowExecutionException(AdapterActionFuture.java:92)
+	at org.elasticsearch.action.support.AdapterActionFuture.actionGet(AdapterActionFuture.java:79)
+	at com.spr.utils.elasticsearch.ElasticSearchUtil.executeActionGet(ElasticSearchUtil.java:561)
+	... 49 more
+Caused by: java.util.concurrent.ExecutionException: java.io.IOException: request retries exceeded max retry timeout [120000]
+	at org.elasticsearch.common.util.concurrent.BaseFuture$Sync.getValue(BaseFuture.java:288)
+	at org.elasticsearch.common.util.concurrent.BaseFuture$Sync.get(BaseFuture.java:261)
+	at org.elasticsearch.common.util.concurrent.BaseFuture.get(BaseFuture.java:92)
+	at org.elasticsearch.action.support.AdapterActionFuture.actionGet(AdapterActionFuture.java:72)
+	... 50 more
+Caused by: java.io.IOException: request retries exceeded max retry timeout [120000]
+	at org.elasticsearch.client.rest.support.InternalRestClient$1.retryIfPossible(InternalRestClient.java:342)
+	at org.elasticsearch.client.rest.support.InternalRestClient$1.failed(InternalRestClient.java:329)
+	at org.elasticsearch.client.rest.support.InternalRestClientBuilder$2.execute(InternalRestClientBuilder.java:388)
+	at org.elasticsearch.client.rest.support.InternalRestClient.performRequestAsync(InternalRestClient.java:362)
+	at org.elasticsearch.client.rest.support.InternalRestClient.performRequestAsync(InternalRestClient.java:251)
+	at org.elasticsearch.client.rest.support.InternalRestClient.performRequest(InternalRestClient.java:222)
+	at org.elasticsearch.client.rest.support.InternalRestClient.performRequest(InternalRestClient.java:189)
+	at org.elasticsearch.client.rest.support.RestExecuteUtil.execute(RestExecuteUtil.java:75)
+	at org.elasticsearch.client.rest.RestClient.execute(RestClient.java:113)
+	at org.elasticsearch.client.support.AbstractClient.search(AbstractClient.java:348)
+	at org.elasticsearch.action.search.SearchRequestBuilder.doExecute(SearchRequestBuilder.java:1208)
+	at org.elasticsearch.action.ActionRequestBuilder.execute(ActionRequestBuilder.java:94)
+	at org.elasticsearch.action.ActionRequestBuilder.execute(ActionRequestBuilder.java:68)
+	... 50 more
+""",
+            "entityType" : "AdEntity",
+            "query" : """{"size":20000,"timeout":"120000ms","query":{"constant_score":{"filter":{"bool":{"must":[{"term":{"adCreativeDetail.adCreativeAssets.postId":13856286434}},{"term":{"status":"SCHEDULED"}},{"bool":{"must_not":{"term":{"status":"DELETED"}}}},{"term":{"entityType":"AD_VARIANT"}}]}}}}}""",
+            "__exception_atClassRC" : "org.elasticsearch.client.rest.support.InternalRestClient$1",
+            "__exception_atClass" : "com.spr.utils.elasticsearch.ElasticSearchUtil",
+            "pId" : "124",
+            "ttm" : 120046,
+            "__exception_atPackageRC" : "org.elasticsearch.client.rest.support",
+            "indices" : [
+              "ad_entity_124_v6_read"
+            ],
+            "es-requestId" : "6672dfafc7d23554c77cb3e1",
+            "esReqType" : "ESSearchRequestBuilder",
+            "success" : false,
+            "__exception_atClassMethod" : "com.spr.utils.elasticsearch.ElasticSearchUtil.executeActionGet(ElasticSearchUtil.java:564)"
+          },
+          "fetch_size" : 20000,
+          "ctxCId" : 8805,
+          "timestamp" : 1718804519758
+        }
+      },
+      {
+        "_index" : "monitoring_longlived_20240619_1200",
+        "_type" : "monitoringLog",
+        "_id" : "HOG7MJABBvSQ5IXHSgf-",
+        "_score" : 9.583778,
+        "_source" : {
+          "date" : "2024-06-19 19:11:38.583 +0530",
+          "ctxUId" : -100,
+          "moduleType" : "paid",
+          "level" : "ERROR",
+          "uuid" : "e9d95448-b233-474c-b341-a33ed46406db",
+          "ctxPId" : 124,
+          "calleeClass" : "com.spr.search.repository.elasticsearch.es.AbstractESRequestBuilder",
+          "threadName" : "APP_Thread_124_11684_-100__1718804498583_P_Th_SPR-monitoring-logger-pool-7-thread-11",
+          "sprAppInfo" : {
+            "sprAppType" : "MSG_PROCESSOR",
+            "extraAppInfo" : { },
+            "metaInfo" : { },
+            "processID" : "1",
+            "appStartTime" : 1718596950256,
+            "webRequest" : false,
+            "ui" : false
+          },
+          "querySkeletonHash" : "7865D5",
+          "calleeMethod" : "doSafeLog",
+          "requestContext" : {
+            "path" : "com.spr.events.event.outbound.PostUpdatedEvent",
+            "distributedTraceId" : "6672df9a296ce30a6d3b8966",
+            "module" : "MP",
+            "additional" : { },
+            "source" : "com.spr.events.event.outbound.PostUpdatedEvent",
+            "traceEnabled" : false,
+            "debugLogEnabled" : false,
+            "skipAutoTranslate" : false
+          },
+          "hostNameIp" : "message-processor-event-queue-deployment-75569dd8cc-kp4h5/10.0.110.247",
+          "deploymentName" : "message-processor-event-queue-deployment",
+          "attributes" : {
+            "__exception_class" : "com.spr.exceptions.unchecked.SprinklrRuntimeException",
+            "indicesCount" : 1,
+            "__exception_atPackage" : "com.spr.utils.elasticsearch",
+            "__exception_rootCause_class" : "java.io.IOException",
+            "__exception_atClassMethodRC" : "org.elasticsearch.client.rest.support.InternalRestClient$1.retryIfPossible(InternalRestClient.java:342)",
+            "_doc_type" : "longlived",
+            "callee_m" : "call",
+            "clusterName" : "paid1-es7",
+            "__exception_exceptionChain" : "com.spr.exceptions.unchecked.SprinklrRuntimeException: Failed execution timeValue: 15m, org.elasticsearch.common.util.concurrent.UncategorizedExecutionException: Failed execution, java.util.concurrent.ExecutionException: java.io.IOException: request retries exceeded max retry timeout [120000], java.io.IOException: request retries exceeded max retry timeout [120000]",
+            "__exception_msg" : "Failed execution timeValue: 15m",
+            "callee_c" : "com.spr.ops.ContextTransferableCallable",
+            "esServerType" : "AD_ENTITY",
+            "querySize" : 280,
+            "__exception_stackTrace" : """com.spr.exceptions.unchecked.SprinklrRuntimeException: Failed execution timeValue: 15m
+	at com.spr.utils.elasticsearch.ElasticSearchUtil.executeActionGet(ElasticSearchUtil.java:564)
+	at com.spr.search.repository.elasticsearch.es.AbstractESRequestBuilder.doExecuteActionGet(AbstractESRequestBuilder.java:174)
+	at com.spr.search.repository.elasticsearch.es.ESSearchRequestBuilder.doExecuteActionGet(ESSearchRequestBuilder.java:258)
+	at com.spr.search.repository.elasticsearch.es.ESSearchRequestBuilder.doExecuteActionGet(ESSearchRequestBuilder.java:62)
+	at com.spr.search.repository.elasticsearch.es.AbstractESRequestBuilder.lambda$executeActionGet$0(AbstractESRequestBuilder.java:102)
+	at com.spr.utils.core.interceptor.TracingInterceptor.run(TracingInterceptor.java:20)
+	at com.spr.utils.core.interceptor.Interceptors.lambda$run$1(Interceptors.java:56)
+	at com.spr.utils.core.RequestContextProvider.safeTrackCall(RequestContextProvider.java:323)
+	at com.spr.utils.core.interceptor.TrackingInterceptor.run(TrackingInterceptor.java:15)
+	at com.spr.utils.core.interceptor.Interceptors.lambda$run$1(Interceptors.java:56)
+	at com.spr.utils.core.interceptor.StuckThreadInterceptor.run(StuckThreadInterceptor.java:77)
+	at com.spr.utils.core.interceptor.Interceptors.lambda$run$1(Interceptors.java:56)
+	at com.spr.utils.core.interceptor.BulkheadInterceptor.run(BulkheadInterceptor.java:31)
+	at com.spr.utils.core.interceptor.Interceptors.lambda$run$1(Interceptors.java:56)
+	at com.spr.utils.core.interceptor.RateLimiterInterceptor.run(RateLimiterInterceptor.java:53)
+	at com.spr.utils.core.interceptor.Interceptors.lambda$run$1(Interceptors.java:56)
+	at com.spr.utils.core.interceptor.CircuitBreakerInterceptor.run(CircuitBreakerInterceptor.java:29)
+	at com.spr.utils.core.interceptor.Interceptors.lambda$run$1(Interceptors.java:56)
+	at com.spr.utils.core.interceptor.Interceptors.run(Interceptors.java:53)
+	at com.spr.utils.core.interceptor.Interceptors.run(Interceptors.java:56)
+	at com.spr.utils.core.interceptor.Interceptors.run(Interceptors.java:56)
+	at com.spr.utils.core.interceptor.Interceptors.run(Interceptors.java:56)
+	at com.spr.utils.core.interceptor.Interceptors.run(Interceptors.java:56)
+	at com.spr.utils.core.interceptor.Interceptors.run(Interceptors.java:56)
+	at com.spr.utils.core.interceptor.Interceptors.run(Interceptors.java:56)
+	at com.spr.utils.core.interceptor.Interceptors.run(Interceptors.java:45)
+	at com.spr.search.repository.elasticsearch.es.AbstractESRequestBuilder.executeActionGet(AbstractESRequestBuilder.java:100)
+	at com.spr.search.repository.elasticsearch.ESSearchRepositoryImpl.search(ESSearchRepositoryImpl.java:324)
+	at com.spr.search.repository.elasticsearch.ESSearchRepositoryDelegator.search(ESSearchRepositoryDelegator.java:169)
+	at com.spr.paid.repositories.AbstractRepository.doRepoSearch(AbstractRepository.java:897)
+	at com.spr.paid.repositories.AbstractRepository.findWithESResponse(AbstractRepository.java:705)
+	at com.spr.paid.repositories.AbstractRepository.find(AbstractRepository.java:353)
+	at com.spr.services.schedule.AdVariantPublishScheduleServiceImpl.getAdsUsingPost(AdVariantPublishScheduleServiceImpl.java:589)
+	at com.spr.services.schedule.AdVariantPublishScheduleServiceImpl.updateSchedulingAction(AdVariantPublishScheduleServiceImpl.java:171)
+	at com.spr.messageprocessor.listeners.outbound.PostUpdatedEventListener.process(PostUpdatedEventListener.java:111)
+	at com.spr.messageprocessor.listeners.outbound.PostUpdatedEventListener.process(PostUpdatedEventListener.java:67)
+	at com.spr.messageprocessor.listeners.outbound.AbstractPostEventListener.processEvent(AbstractPostEventListener.java:129)
+	at com.spr.messageprocessor.listeners.outbound.AbstractPostEventListener.processEvent(AbstractPostEventListener.java:78)
+	at com.spr.messageprocessor.listeners.eventQueue.EventQueueListener.processMessage(EventQueueListener.java:53)
+	at com.spr.messageprocessor.framework.AbstractObjectMessageListener.processMessage(AbstractObjectMessageListener.java:54)
+	at com.spr.messageprocessor.framework.AbstractObjectMessageListener.processEvent(AbstractObjectMessageListener.java:84)
+	at com.spr.messageprocessor.framework.AbstractObjectMessageListener.onKafkaEvent(AbstractObjectMessageListener.java:49)
+	at com.spr.messageprocessor.framework.executor.TopicWorker$Task.run(TopicWorker.java:575)
+	at io.github.resilience4j.bulkhead.Bulkhead.lambda$decorateRunnable$10(Bulkhead.java:299)
+	at io.github.resilience4j.bulkhead.Bulkhead.executeRunnable(Bulkhead.java:534)
+	at com.spr.resilence.bulkhead.SemaphoreBulkhead.execute(SemaphoreBulkhead.java:83)
+	at com.spr.messageprocessor.framework.executor.TopicWorker$2.run(TopicWorker.java:368)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: org.elasticsearch.common.util.concurrent.UncategorizedExecutionException: Failed execution
+	at org.elasticsearch.action.support.AdapterActionFuture.rethrowExecutionException(AdapterActionFuture.java:92)
+	at org.elasticsearch.action.support.AdapterActionFuture.actionGet(AdapterActionFuture.java:79)
+	at com.spr.utils.elasticsearch.ElasticSearchUtil.executeActionGet(ElasticSearchUtil.java:561)
+	... 49 more
+Caused by: java.util.concurrent.ExecutionException: java.io.IOException: request retries exceeded max retry timeout [120000]
+	at org.elasticsearch.common.util.concurrent.BaseFuture$Sync.getValue(BaseFuture.java:288)
+	at org.elasticsearch.common.util.concurrent.BaseFuture$Sync.get(BaseFuture.java:261)
+	at org.elasticsearch.common.util.concurrent.BaseFuture.get(BaseFuture.java:92)
+	at org.elasticsearch.action.support.AdapterActionFuture.actionGet(AdapterActionFuture.java:72)
+	... 50 more
+Caused by: java.io.IOException: request retries exceeded max retry timeout [120000]
+	at org.elasticsearch.client.rest.support.InternalRestClient$1.retryIfPossible(InternalRestClient.java:342)
+	at org.elasticsearch.client.rest.support.InternalRestClient$1.failed(InternalRestClient.java:329)
+	at org.elasticsearch.client.rest.support.InternalRestClientBuilder$2.execute(InternalRestClientBuilder.java:388)
+	at org.elasticsearch.client.rest.support.InternalRestClient.performRequestAsync(InternalRestClient.java:362)
+	at org.elasticsearch.client.rest.support.InternalRestClient.performRequestAsync(InternalRestClient.java:251)
+	at org.elasticsearch.client.rest.support.InternalRestClient.performRequest(InternalRestClient.java:222)
+	at org.elasticsearch.client.rest.support.InternalRestClient.performRequest(InternalRestClient.java:189)
+	at org.elasticsearch.client.rest.support.RestExecuteUtil.execute(RestExecuteUtil.java:75)
+	at org.elasticsearch.client.rest.RestClient.execute(RestClient.java:113)
+	at org.elasticsearch.client.support.AbstractClient.search(AbstractClient.java:348)
+	at org.elasticsearch.action.search.SearchRequestBuilder.doExecute(SearchRequestBuilder.java:1208)
+	at org.elasticsearch.action.ActionRequestBuilder.execute(ActionRequestBuilder.java:94)
+	at org.elasticsearch.action.ActionRequestBuilder.execute(ActionRequestBuilder.java:68)
+	... 50 more
+""",
+            "entityType" : "AdEntity",
+            "query" : """{"size":20000,"timeout":"120000ms","query":{"constant_score":{"filter":{"bool":{"must":[{"term":{"adCreativeDetail.adCreativeAssets.postId":13856282813}},{"term":{"status":"SCHEDULED"}},{"bool":{"must_not":{"term":{"status":"DELETED"}}}},{"term":{"entityType":"AD_VARIANT"}}]}}}}}""",
+            "__exception_atClassRC" : "org.elasticsearch.client.rest.support.InternalRestClient$1",
+            "__exception_atClass" : "com.spr.utils.elasticsearch.ElasticSearchUtil",
+            "pId" : "124",
+            "ttm" : 120099,
+            "__exception_atPackageRC" : "org.elasticsearch.client.rest.support",
+            "indices" : [
+              "ad_entity_124_v6_read"
+            ],
+            "es-requestId" : "6672df9a296ce30a6d3b896b",
+            "esReqType" : "ESSearchRequestBuilder",
+            "success" : false,
+            "__exception_atClassMethod" : "com.spr.utils.elasticsearch.ElasticSearchUtil.executeActionGet(ElasticSearchUtil.java:564)"
+          },
+          "fetch_size" : 20000,
+          "ctxCId" : 11684,
+          "timestamp" : 1718804498583
+        }
+      },
+      {
+        "_index" : "monitoring_longlived_20240619_1200",
+        "_type" : "monitoringLog",
+        "_id" : "1PW7MJABwRBoB-_btB_A",
+        "_score" : 9.583778,
+        "_source" : {
+          "date" : "2024-06-19 19:12:05.079 +0530",
+          "ctxUId" : -100,
+          "moduleType" : "paid",
+          "level" : "ERROR",
+          "uuid" : "fcefb03e-ed63-484c-8af7-910387d9c7b8",
+          "ctxPId" : 124,
+          "calleeClass" : "com.spr.search.repository.elasticsearch.es.AbstractESRequestBuilder",
+          "threadName" : "APP_Thread_124_11684_-100__1718804525079_P_Th_SPR-monitoring-logger-pool-7-thread-15",
+          "sprAppInfo" : {
+            "sprAppType" : "MSG_PROCESSOR",
+            "extraAppInfo" : { },
+            "metaInfo" : { },
+            "processID" : "1",
+            "appStartTime" : 1718596950256,
+            "webRequest" : false,
+            "ui" : false
+          },
+          "querySkeletonHash" : "7865D5",
+          "calleeMethod" : "doSafeLog",
+          "requestContext" : {
+            "path" : "com.spr.events.event.outbound.PostUpdatedEvent",
+            "distributedTraceId" : "6672dfb4296ce30a6d3c0f54",
+            "module" : "MP",
+            "additional" : { },
+            "source" : "com.spr.events.event.outbound.PostUpdatedEvent",
+            "traceEnabled" : false,
+            "debugLogEnabled" : false,
+            "skipAutoTranslate" : false
+          },
+          "hostNameIp" : "message-processor-event-queue-deployment-75569dd8cc-kp4h5/10.0.110.247",
+          "deploymentName" : "message-processor-event-queue-deployment",
+          "attributes" : {
+            "__exception_class" : "com.spr.exceptions.unchecked.SprinklrRuntimeException",
+            "indicesCount" : 1,
+            "__exception_atPackage" : "com.spr.utils.elasticsearch",
+            "__exception_rootCause_class" : "java.io.IOException",
+            "__exception_atClassMethodRC" : "org.elasticsearch.client.rest.support.InternalRestClient$1.retryIfPossible(InternalRestClient.java:342)",
+            "_doc_type" : "longlived",
+            "callee_m" : "call",
+            "clusterName" : "paid1-es7",
+            "__exception_exceptionChain" : "com.spr.exceptions.unchecked.SprinklrRuntimeException: Failed execution timeValue: 15m, org.elasticsearch.common.util.concurrent.UncategorizedExecutionException: Failed execution, java.util.concurrent.ExecutionException: java.io.IOException: request retries exceeded max retry timeout [120000], java.io.IOException: request retries exceeded max retry timeout [120000]",
+            "__exception_msg" : "Failed execution timeValue: 15m",
+            "callee_c" : "com.spr.ops.ContextTransferableCallable",
+            "esServerType" : "AD_ENTITY",
+            "querySize" : 280,
+            "__exception_stackTrace" : """com.spr.exceptions.unchecked.SprinklrRuntimeException: Failed execution timeValue: 15m
+	at com.spr.utils.elasticsearch.ElasticSearchUtil.executeActionGet(ElasticSearchUtil.java:564)
+	at com.spr.search.repository.elasticsearch.es.AbstractESRequestBuilder.doExecuteActionGet(AbstractESRequestBuilder.java:174)
+	at com.spr.search.repository.elasticsearch.es.ESSearchRequestBuilder.doExecuteActionGet(ESSearchRequestBuilder.java:258)
+	at com.spr.search.repository.elasticsearch.es.ESSearchRequestBuilder.doExecuteActionGet(ESSearchRequestBuilder.java:62)
+	at com.spr.search.repository.elasticsearch.es.AbstractESRequestBuilder.lambda$executeActionGet$0(AbstractESRequestBuilder.java:102)
+	at com.spr.utils.core.interceptor.TracingInterceptor.run(TracingInterceptor.java:20)
+	at com.spr.utils.core.interceptor.Interceptors.lambda$run$1(Interceptors.java:56)
+	at com.spr.utils.core.RequestContextProvider.safeTrackCall(RequestContextProvider.java:323)
+	at com.spr.utils.core.interceptor.TrackingInterceptor.run(TrackingInterceptor.java:15)
+	at com.spr.utils.core.interceptor.Interceptors.lambda$run$1(Interceptors.java:56)
+	at com.spr.utils.core.interceptor.StuckThreadInterceptor.run(StuckThreadInterceptor.java:77)
+	at com.spr.utils.core.interceptor.Interceptors.lambda$run$1(Interceptors.java:56)
+	at com.spr.utils.core.interceptor.BulkheadInterceptor.run(BulkheadInterceptor.java:31)
+	at com.spr.utils.core.interceptor.Interceptors.lambda$run$1(Interceptors.java:56)
+	at com.spr.utils.core.interceptor.RateLimiterInterceptor.run(RateLimiterInterceptor.java:53)
+	at com.spr.utils.core.interceptor.Interceptors.lambda$run$1(Interceptors.java:56)
+	at com.spr.utils.core.interceptor.CircuitBreakerInterceptor.run(CircuitBreakerInterceptor.java:29)
+	at com.spr.utils.core.interceptor.Interceptors.lambda$run$1(Interceptors.java:56)
+	at com.spr.utils.core.interceptor.Interceptors.run(Interceptors.java:53)
+	at com.spr.utils.core.interceptor.Interceptors.run(Interceptors.java:56)
+	at com.spr.utils.core.interceptor.Interceptors.run(Interceptors.java:56)
+	at com.spr.utils.core.interceptor.Interceptors.run(Interceptors.java:56)
+	at com.spr.utils.core.interceptor.Interceptors.run(Interceptors.java:56)
+	at com.spr.utils.core.interceptor.Interceptors.run(Interceptors.java:56)
+	at com.spr.utils.core.interceptor.Interceptors.run(Interceptors.java:56)
+	at com.spr.utils.core.interceptor.Interceptors.run(Interceptors.java:45)
+	at com.spr.search.repository.elasticsearch.es.AbstractESRequestBuilder.executeActionGet(AbstractESRequestBuilder.java:100)
+	at com.spr.search.repository.elasticsearch.ESSearchRepositoryImpl.search(ESSearchRepositoryImpl.java:324)
+	at com.spr.search.repository.elasticsearch.ESSearchRepositoryDelegator.search(ESSearchRepositoryDelegator.java:169)
+	at com.spr.paid.repositories.AbstractRepository.doRepoSearch(AbstractRepository.java:897)
+	at com.spr.paid.repositories.AbstractRepository.findWithESResponse(AbstractRepository.java:705)
+	at com.spr.paid.repositories.AbstractRepository.find(AbstractRepository.java:353)
+	at com.spr.services.schedule.AdVariantPublishScheduleServiceImpl.getAdsUsingPost(AdVariantPublishScheduleServiceImpl.java:589)
+	at com.spr.services.schedule.AdVariantPublishScheduleServiceImpl.updateSchedulingAction(AdVariantPublishScheduleServiceImpl.java:171)
+	at com.spr.messageprocessor.listeners.outbound.PostUpdatedEventListener.process(PostUpdatedEventListener.java:111)
+	at com.spr.messageprocessor.listeners.outbound.PostUpdatedEventListener.process(PostUpdatedEventListener.java:67)
+	at com.spr.messageprocessor.listeners.outbound.AbstractPostEventListener.processEvent(AbstractPostEventListener.java:129)
+	at com.spr.messageprocessor.listeners.outbound.AbstractPostEventListener.processEvent(AbstractPostEventListener.java:78)
+	at com.spr.messageprocessor.listeners.eventQueue.EventQueueListener.processMessage(EventQueueListener.java:53)
+	at com.spr.messageprocessor.framework.AbstractObjectMessageListener.processMessage(AbstractObjectMessageListener.java:54)
+	at com.spr.messageprocessor.framework.AbstractObjectMessageListener.processEvent(AbstractObjectMessageListener.java:84)
+	at com.spr.messageprocessor.framework.AbstractObjectMessageListener.onKafkaEvent(AbstractObjectMessageListener.java:49)
+	at com.spr.messageprocessor.framework.executor.TopicWorker$Task.run(TopicWorker.java:575)
+	at io.github.resilience4j.bulkhead.Bulkhead.lambda$decorateRunnable$10(Bulkhead.java:299)
+	at io.github.resilience4j.bulkhead.Bulkhead.executeRunnable(Bulkhead.java:534)
+	at com.spr.resilence.bulkhead.SemaphoreBulkhead.execute(SemaphoreBulkhead.java:83)
+	at com.spr.messageprocessor.framework.executor.TopicWorker$2.run(TopicWorker.java:368)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: org.elasticsearch.common.util.concurrent.UncategorizedExecutionException: Failed execution
+	at org.elasticsearch.action.support.AdapterActionFuture.rethrowExecutionException(AdapterActionFuture.java:92)
+	at org.elasticsearch.action.support.AdapterActionFuture.actionGet(AdapterActionFuture.java:79)
+	at com.spr.utils.elasticsearch.ElasticSearchUtil.executeActionGet(ElasticSearchUtil.java:561)
+	... 49 more
+Caused by: java.util.concurrent.ExecutionException: java.io.IOException: request retries exceeded max retry timeout [120000]
+	at org.elasticsearch.common.util.concurrent.BaseFuture$Sync.getValue(BaseFuture.java:288)
+	at org.elasticsearch.common.util.concurrent.BaseFuture$Sync.get(BaseFuture.java:261)
+	at org.elasticsearch.common.util.concurrent.BaseFuture.get(BaseFuture.java:92)
+	at org.elasticsearch.action.support.AdapterActionFuture.actionGet(AdapterActionFuture.java:72)
+	... 50 more
+Caused by: java.io.IOException: request retries exceeded max retry timeout [120000]
+	at org.elasticsearch.client.rest.support.InternalRestClient$1.retryIfPossible(InternalRestClient.java:342)
+	at org.elasticsearch.client.rest.support.InternalRestClient$1.failed(InternalRestClient.java:329)
+	at org.elasticsearch.client.rest.support.InternalRestClientBuilder$2.execute(InternalRestClientBuilder.java:388)
+	at org.elasticsearch.client.rest.support.InternalRestClient.performRequestAsync(InternalRestClient.java:362)
+	at org.elasticsearch.client.rest.support.InternalRestClient.performRequestAsync(InternalRestClient.java:251)
+	at org.elasticsearch.client.rest.support.InternalRestClient.performRequest(InternalRestClient.java:222)
+	at org.elasticsearch.client.rest.support.InternalRestClient.performRequest(InternalRestClient.java:189)
+	at org.elasticsearch.client.rest.support.RestExecuteUtil.execute(RestExecuteUtil.java:75)
+	at org.elasticsearch.client.rest.RestClient.execute(RestClient.java:113)
+	at org.elasticsearch.client.support.AbstractClient.search(AbstractClient.java:348)
+	at org.elasticsearch.action.search.SearchRequestBuilder.doExecute(SearchRequestBuilder.java:1208)
+	at org.elasticsearch.action.ActionRequestBuilder.execute(ActionRequestBuilder.java:94)
+	at org.elasticsearch.action.ActionRequestBuilder.execute(ActionRequestBuilder.java:68)
+	... 50 more
+""",
+            "entityType" : "AdEntity",
+            "query" : """{"size":20000,"timeout":"120000ms","query":{"constant_score":{"filter":{"bool":{"must":[{"term":{"adCreativeDetail.adCreativeAssets.postId":13856287475}},{"term":{"status":"SCHEDULED"}},{"bool":{"must_not":{"term":{"status":"DELETED"}}}},{"term":{"entityType":"AD_VARIANT"}}]}}}}}""",
+            "__exception_atClassRC" : "org.elasticsearch.client.rest.support.InternalRestClient$1",
+            "__exception_atClass" : "com.spr.utils.elasticsearch.ElasticSearchUtil",
+            "pId" : "124",
+            "ttm" : 120096,
+            "__exception_atPackageRC" : "org.elasticsearch.client.rest.support",
+            "indices" : [
+              "ad_entity_124_v6_read"
+            ],
+            "es-requestId" : "6672dfb4296ce30a6d3c0f5d",
+            "esReqType" : "ESSearchRequestBuilder",
+            "success" : false,
+            "__exception_atClassMethod" : "com.spr.utils.elasticsearch.ElasticSearchUtil.executeActionGet(ElasticSearchUtil.java:564)"
+          },
+          "fetch_size" : 20000,
+          "ctxCId" : 11684,
+          "timestamp" : 1718804525079
+        }
+      }
+    ]
+  }
+}

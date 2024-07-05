@@ -1,0 +1,608 @@
+[
+  {
+    "schema": {
+      "refId": "C",
+      "meta": {
+        "executedQueryString": "SELECT difference(\"value\") FROM \"es-threadpool_thread_pool_write_rejected\" WHERE \"host\" =~ /^(es-data-paid1-es7-21-1b|es-data-paid1-es7-22-1e|es-data-paid1-es7-23-1b|es-data-paid1-es7-24-1e|es-data-paid1-es7-27-1b|es-data-paid1-es7-28-1e|es-data-paid1-es7-29-1b|es-data-paid1-es7-30-1e|es-master-paid1-es7-1-1b|es-master-paid1-es7-2-1c|es-master-paid1-es7-3-1a)$/ AND time >= 1719138193000ms and time <= 1719138958000ms GROUP BY \"host\""
+      },
+      "name": "es-threadpool_thread_pool_write_rejected.difference {host: es-data-paid1-es7-21-1b}",
+      "fields": [
+        {
+          "name": "Time",
+          "type": "time",
+          "config": {}
+        },
+        {
+          "name": "Value",
+          "type": "number",
+          "config": {
+            "displayNameFromDS": "es-threadpool_thread_pool_write_rejected.difference {host: es-data-paid1-es7-21-1b}"
+          },
+          "labels": {
+            "host": "es-data-paid1-es7-21-1b"
+          }
+        }
+      ]
+    },
+    "data": {
+      "values": [
+        [
+          1719138291000,
+          1719138351000,
+          1719138411000,
+          1719138471000,
+          1719138531000,
+          1719138591000,
+          1719138651000,
+          1719138711000,
+          1719138771000,
+          1719138831000,
+          1719138891000,
+          1719138951000
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    }
+  },
+  {
+    "schema": {
+      "refId": "C",
+      "name": "es-threadpool_thread_pool_write_rejected.difference {host: es-data-paid1-es7-22-1e}",
+      "fields": [
+        {
+          "name": "Time",
+          "type": "time",
+          "config": {}
+        },
+        {
+          "name": "Value",
+          "type": "number",
+          "config": {
+            "displayNameFromDS": "es-threadpool_thread_pool_write_rejected.difference {host: es-data-paid1-es7-22-1e}"
+          },
+          "labels": {
+            "host": "es-data-paid1-es7-22-1e"
+          }
+        }
+      ]
+    },
+    "data": {
+      "values": [
+        [
+          1719138291000,
+          1719138351000,
+          1719138411000,
+          1719138471000,
+          1719138531000,
+          1719138591000,
+          1719138651000,
+          1719138711000,
+          1719138771000,
+          1719138831000,
+          1719138891000,
+          1719138951000
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    }
+  },
+  {
+    "schema": {
+      "refId": "C",
+      "name": "es-threadpool_thread_pool_write_rejected.difference {host: es-data-paid1-es7-23-1b}",
+      "fields": [
+        {
+          "name": "Time",
+          "type": "time",
+          "config": {}
+        },
+        {
+          "name": "Value",
+          "type": "number",
+          "config": {
+            "displayNameFromDS": "es-threadpool_thread_pool_write_rejected.difference {host: es-data-paid1-es7-23-1b}"
+          },
+          "labels": {
+            "host": "es-data-paid1-es7-23-1b"
+          }
+        }
+      ]
+    },
+    "data": {
+      "values": [
+        [
+          1719138291000,
+          1719138351000,
+          1719138411000,
+          1719138471000,
+          1719138531000,
+          1719138591000,
+          1719138651000,
+          1719138711000,
+          1719138771000,
+          1719138831000,
+          1719138891000,
+          1719138951000
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    }
+  },
+  {
+    "schema": {
+      "refId": "C",
+      "name": "es-threadpool_thread_pool_write_rejected.difference {host: es-data-paid1-es7-24-1e}",
+      "fields": [
+        {
+          "name": "Time",
+          "type": "time",
+          "config": {}
+        },
+        {
+          "name": "Value",
+          "type": "number",
+          "config": {
+            "displayNameFromDS": "es-threadpool_thread_pool_write_rejected.difference {host: es-data-paid1-es7-24-1e}"
+          },
+          "labels": {
+            "host": "es-data-paid1-es7-24-1e"
+          }
+        }
+      ]
+    },
+    "data": {
+      "values": [
+        [
+          1719138291000,
+          1719138351000,
+          1719138411000,
+          1719138471000,
+          1719138531000,
+          1719138591000,
+          1719138651000,
+          1719138711000,
+          1719138771000,
+          1719138831000,
+          1719138891000,
+          1719138951000
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    }
+  },
+  {
+    "schema": {
+      "refId": "C",
+      "name": "es-threadpool_thread_pool_write_rejected.difference {host: es-data-paid1-es7-27-1b}",
+      "fields": [
+        {
+          "name": "Time",
+          "type": "time",
+          "config": {}
+        },
+        {
+          "name": "Value",
+          "type": "number",
+          "config": {
+            "displayNameFromDS": "es-threadpool_thread_pool_write_rejected.difference {host: es-data-paid1-es7-27-1b}"
+          },
+          "labels": {
+            "host": "es-data-paid1-es7-27-1b"
+          }
+        }
+      ]
+    },
+    "data": {
+      "values": [
+        [
+          1719138291000,
+          1719138411000,
+          1719138471000,
+          1719138531000,
+          1719138591000,
+          1719138651000,
+          1719138711000,
+          1719138771000,
+          1719138831000,
+          1719138891000,
+          1719138951000
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    }
+  },
+  {
+    "schema": {
+      "refId": "C",
+      "name": "es-threadpool_thread_pool_write_rejected.difference {host: es-data-paid1-es7-28-1e}",
+      "fields": [
+        {
+          "name": "Time",
+          "type": "time",
+          "config": {}
+        },
+        {
+          "name": "Value",
+          "type": "number",
+          "config": {
+            "displayNameFromDS": "es-threadpool_thread_pool_write_rejected.difference {host: es-data-paid1-es7-28-1e}"
+          },
+          "labels": {
+            "host": "es-data-paid1-es7-28-1e"
+          }
+        }
+      ]
+    },
+    "data": {
+      "values": [
+        [
+          1719138291000,
+          1719138351000,
+          1719138411000,
+          1719138471000,
+          1719138531000,
+          1719138591000,
+          1719138651000,
+          1719138711000,
+          1719138771000,
+          1719138831000,
+          1719138891000,
+          1719138951000
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    }
+  },
+  {
+    "schema": {
+      "refId": "C",
+      "name": "es-threadpool_thread_pool_write_rejected.difference {host: es-data-paid1-es7-29-1b}",
+      "fields": [
+        {
+          "name": "Time",
+          "type": "time",
+          "config": {}
+        },
+        {
+          "name": "Value",
+          "type": "number",
+          "config": {
+            "displayNameFromDS": "es-threadpool_thread_pool_write_rejected.difference {host: es-data-paid1-es7-29-1b}"
+          },
+          "labels": {
+            "host": "es-data-paid1-es7-29-1b"
+          }
+        }
+      ]
+    },
+    "data": {
+      "values": [
+        [
+          1719138291000,
+          1719138351000,
+          1719138411000,
+          1719138471000,
+          1719138531000,
+          1719138591000,
+          1719138651000,
+          1719138711000,
+          1719138771000,
+          1719138831000,
+          1719138891000,
+          1719138951000
+        ],
+        [
+          0,
+          0,
+          0,
+          170,
+          41,
+          210,
+          37,
+          57,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    }
+  },
+  {
+    "schema": {
+      "refId": "C",
+      "name": "es-threadpool_thread_pool_write_rejected.difference {host: es-data-paid1-es7-30-1e}",
+      "fields": [
+        {
+          "name": "Time",
+          "type": "time",
+          "config": {}
+        },
+        {
+          "name": "Value",
+          "type": "number",
+          "config": {
+            "displayNameFromDS": "es-threadpool_thread_pool_write_rejected.difference {host: es-data-paid1-es7-30-1e}"
+          },
+          "labels": {
+            "host": "es-data-paid1-es7-30-1e"
+          }
+        }
+      ]
+    },
+    "data": {
+      "values": [
+        [
+          1719138291000,
+          1719138351000,
+          1719138411000,
+          1719138471000,
+          1719138531000,
+          1719138591000,
+          1719138651000,
+          1719138711000,
+          1719138771000,
+          1719138831000,
+          1719138891000,
+          1719138951000
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    }
+  },
+  {
+    "schema": {
+      "refId": "C",
+      "name": "es-threadpool_thread_pool_write_rejected.difference {host: es-master-paid1-es7-1-1b}",
+      "fields": [
+        {
+          "name": "Time",
+          "type": "time",
+          "config": {}
+        },
+        {
+          "name": "Value",
+          "type": "number",
+          "config": {
+            "displayNameFromDS": "es-threadpool_thread_pool_write_rejected.difference {host: es-master-paid1-es7-1-1b}"
+          },
+          "labels": {
+            "host": "es-master-paid1-es7-1-1b"
+          }
+        }
+      ]
+    },
+    "data": {
+      "values": [
+        [
+          1719138291000,
+          1719138351000,
+          1719138411000,
+          1719138471000,
+          1719138531000,
+          1719138591000,
+          1719138651000,
+          1719138711000,
+          1719138771000,
+          1719138831000,
+          1719138891000,
+          1719138951000
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    }
+  },
+  {
+    "schema": {
+      "refId": "C",
+      "name": "es-threadpool_thread_pool_write_rejected.difference {host: es-master-paid1-es7-2-1c}",
+      "fields": [
+        {
+          "name": "Time",
+          "type": "time",
+          "config": {}
+        },
+        {
+          "name": "Value",
+          "type": "number",
+          "config": {
+            "displayNameFromDS": "es-threadpool_thread_pool_write_rejected.difference {host: es-master-paid1-es7-2-1c}"
+          },
+          "labels": {
+            "host": "es-master-paid1-es7-2-1c"
+          }
+        }
+      ]
+    },
+    "data": {
+      "values": [
+        [
+          1719138291000,
+          1719138351000,
+          1719138411000,
+          1719138471000,
+          1719138531000,
+          1719138591000,
+          1719138651000,
+          1719138711000,
+          1719138771000,
+          1719138831000,
+          1719138891000,
+          1719138951000
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    }
+  },
+  {
+    "schema": {
+      "refId": "C",
+      "name": "es-threadpool_thread_pool_write_rejected.difference {host: es-master-paid1-es7-3-1a}",
+      "fields": [
+        {
+          "name": "Time",
+          "type": "time",
+          "config": {}
+        },
+        {
+          "name": "Value",
+          "type": "number",
+          "config": {
+            "displayNameFromDS": "es-threadpool_thread_pool_write_rejected.difference {host: es-master-paid1-es7-3-1a}"
+          },
+          "labels": {
+            "host": "es-master-paid1-es7-3-1a"
+          }
+        }
+      ]
+    },
+    "data": {
+      "values": [
+        [
+          1719138291000,
+          1719138351000,
+          1719138411000,
+          1719138471000,
+          1719138531000,
+          1719138591000,
+          1719138651000,
+          1719138711000,
+          1719138771000,
+          1719138831000,
+          1719138891000,
+          1719138951000
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    }
+  }
+]

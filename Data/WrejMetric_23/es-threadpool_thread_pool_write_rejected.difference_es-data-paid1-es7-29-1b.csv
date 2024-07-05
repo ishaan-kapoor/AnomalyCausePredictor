@@ -1,0 +1,14 @@
+#datatype measurement,dateTime,long,tag,tag
+record,time,val,hostNode,clusterName
+es-threadpool_thread_pool_write_rejected.difference,1719138291000000000,0,es-data-paid1-es7-29-1b,paid1-es7
+es-threadpool_thread_pool_write_rejected.difference,1719138351000000000,0,es-data-paid1-es7-29-1b,paid1-es7
+es-threadpool_thread_pool_write_rejected.difference,1719138411000000000,0,es-data-paid1-es7-29-1b,paid1-es7
+es-threadpool_thread_pool_write_rejected.difference,1719138471000000000,170,es-data-paid1-es7-29-1b,paid1-es7
+es-threadpool_thread_pool_write_rejected.difference,1719138531000000000,41,es-data-paid1-es7-29-1b,paid1-es7
+es-threadpool_thread_pool_write_rejected.difference,1719138591000000000,210,es-data-paid1-es7-29-1b,paid1-es7
+es-threadpool_thread_pool_write_rejected.difference,1719138651000000000,37,es-data-paid1-es7-29-1b,paid1-es7
+es-threadpool_thread_pool_write_rejected.difference,1719138711000000000,57,es-data-paid1-es7-29-1b,paid1-es7
+es-threadpool_thread_pool_write_rejected.difference,1719138771000000000,0,es-data-paid1-es7-29-1b,paid1-es7
+es-threadpool_thread_pool_write_rejected.difference,1719138831000000000,0,es-data-paid1-es7-29-1b,paid1-es7
+es-threadpool_thread_pool_write_rejected.difference,1719138891000000000,0,es-data-paid1-es7-29-1b,paid1-es7
+es-threadpool_thread_pool_write_rejected.difference,1719138951000000000,0,es-data-paid1-es7-29-1b,paid1-es7

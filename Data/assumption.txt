@@ -1,0 +1,78 @@
+token : VAvHDVaja4941jg4NJKEncgQGXELrjwkicpNSBcl5Uc_1AX--oU-cp546RRyrvW3sXDgyBNhuyiyBXiaDW52bg==
+bucket : refined
+org  : sprinklr
+
+
+
+influx write -b example-bucket -f path/to/example.csv
+
+......KIBANA........
+
+attributes.esReqRecTimestamp (not present in all)
+requestContext.additional.JOB_TRIGGER_START_TIME (not in all)
+date and timestamp (was slightly higher 15sec than job_trigger_start was same for another) present in all
+
+
+...............test case.........
+
+//grafana shows local time
+
+Sample query to es.......
+GET monitoring_*/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "range": {
+            "timestamp": {
+              "gte": "now-2m",
+              "lte": "now"
+            }
+          }
+        },
+        {
+          "exists": {
+            "field": "attributes.clusterName"
+          }
+        },
+        {
+          "match": {
+            "attributes.clusterName": "paid1-es7"
+          }
+        }
+      ]
+    }
+  },
+  "size": 100
+
+
+
+}
+
+paid1-es7 cluster
+
+es cluster red at
+6/19 19:13:47 1718804627000......1718804507000(-2min)......1718804027000(-10min)
+
+
+not necessay that we report only query
+    can report the timerange like in this timerange queries collectively caused... (high demand state, many write etc.)
+
+......................................................................................................................
+
+test cases...
+
+Write rej :         23, 15:53     25, 23:19 to 23:52
+
+Disk usage peak :                 25, 23:44
+ref inline:                       25, 23:37
+
+Old gc :                          25, 23:37         02, 23:27 to 23:40 (peak at 23:35)
+
+attributes.ttm > 100000 or (attributes.ttm > 10000 and attributes.totalMatchCount > 25000) or
+Jul 2, 2024 @ 23:27:00.000
+
+
+
+

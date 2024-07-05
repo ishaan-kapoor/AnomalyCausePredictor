@@ -1,0 +1,26 @@
+how to know query was for get or post, search or write .....
+
+some logs dont have query field what are they
+
+any docs what all other attributes mean
+
+prod red-> will know which index stored in node -> query effecting those index affected node
+
+sucess attribute fail means runtime fail or rejected
+
+what is ESIndexRequestBulder ?? diff from bulkIndex   it has indice_write
+
+
+
+....next this week.....
+one more metric
+two three test sample
+
+then create local elasticsearch ,disable security so that we can do http request .....(done es setup)
+show local/node/stat (prod red) just to demo that we can also use this tool
+
+identify if same query is being fired repeatedly??
+eg. in 2 july 23:30 old gc case large aggregation 3 times
+
+next week
+teams bot, add link to connect to kibana (provide the queries log which can be further looked...)

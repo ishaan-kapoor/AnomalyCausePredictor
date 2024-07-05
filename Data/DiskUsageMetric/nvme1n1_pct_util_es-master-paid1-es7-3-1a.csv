@@ -1,0 +1,20 @@
+#datatype measurement,dateTime,long,tag,tag,tag
+record,time,val,hostNode,diskName,clusterName
+diskUsage,1719337706000000000,0,es-master-paid1-es7-3-1a,nvme1n1_pct_util,paid1-es7
+diskUsage,1719337826000000000,0,es-master-paid1-es7-3-1a,nvme1n1_pct_util,paid1-es7
+diskUsage,1719337946000000000,0,es-master-paid1-es7-3-1a,nvme1n1_pct_util,paid1-es7
+diskUsage,1719338066000000000,0,es-master-paid1-es7-3-1a,nvme1n1_pct_util,paid1-es7
+diskUsage,1719338186000000000,0,es-master-paid1-es7-3-1a,nvme1n1_pct_util,paid1-es7
+diskUsage,1719338306000000000,0,es-master-paid1-es7-3-1a,nvme1n1_pct_util,paid1-es7
+diskUsage,1719338426000000000,0,es-master-paid1-es7-3-1a,nvme1n1_pct_util,paid1-es7
+diskUsage,1719338546000000000,0,es-master-paid1-es7-3-1a,nvme1n1_pct_util,paid1-es7
+diskUsage,1719338666000000000,0,es-master-paid1-es7-3-1a,nvme1n1_pct_util,paid1-es7
+diskUsage,1719338786000000000,0,es-master-paid1-es7-3-1a,nvme1n1_pct_util,paid1-es7
+diskUsage,1719338906000000000,0,es-master-paid1-es7-3-1a,nvme1n1_pct_util,paid1-es7
+diskUsage,1719339026000000000,0,es-master-paid1-es7-3-1a,nvme1n1_pct_util,paid1-es7
+diskUsage,1719339146000000000,0,es-master-paid1-es7-3-1a,nvme1n1_pct_util,paid1-es7
+diskUsage,1719339266000000000,0,es-master-paid1-es7-3-1a,nvme1n1_pct_util,paid1-es7
+diskUsage,1719339386000000000,0,es-master-paid1-es7-3-1a,nvme1n1_pct_util,paid1-es7
+diskUsage,1719339506000000000,0,es-master-paid1-es7-3-1a,nvme1n1_pct_util,paid1-es7
+diskUsage,1719339626000000000,0,es-master-paid1-es7-3-1a,nvme1n1_pct_util,paid1-es7
+diskUsage,1719339746000000000,0,es-master-paid1-es7-3-1a,nvme1n1_pct_util,paid1-es7
