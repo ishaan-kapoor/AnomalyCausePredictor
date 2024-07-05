@@ -1,7 +1,9 @@
 .gradle
 .project
 .settings
+Data
 elasticsearch*
 kibana*
 app/build
 */.DS_Store
+.idea
